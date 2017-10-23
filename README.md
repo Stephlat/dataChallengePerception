@@ -6,8 +6,8 @@ This repository contains the basic scripts that are provided for the challenge:
 You need to install opencv-python and  numpy. Some other recommended librairies are listed on the [data challange page](https://team.inria.fr/perception/research/data-challenge/).   
 
 ## Scripts
-We provide the folowing script:
-* visualizeObs.py: visualize the observations we provide for one given video
+We provide the following scripts:
+* visualizeObs.py: visualize the observations (visual and audio) we provide for one given video
 ```
 python visualizeObs.py ..data/videoDirectory/
 ```
@@ -20,24 +20,27 @@ python visualizePred.py ..data/videoDirectory/prediction.txt
 python evaluatePred.py ..data/videoDirectory/prediction.txt
 ```
 
+We strongly recommend to use these scipts to code the loading function of your own programm.
+
+
 ## Format of the data
 ./data contains one folder per video sequence. Each folder contains:
 
 * video.avi: the video it-self.
 * ssl.avi: the video of the ssl heat map (downsample by a factor 2)
-* detection.txt: full body detection of the video. It contains one detection per line. The format of each line is the following:
+* detection.txt: full body detections of the video. It contains one detection per line. The format of each line is the following:
 ```
 frameNumber x0 y0 x1 y1....x35 y35 
 ```
-When a joint is not detected xi and yi are set to -1
+When a joint is not detected, teh corresponding  xi and yi are set to -1
 
-* groundTruth.txt: full body detection with and with an index to indentify them across time and a seapking label. It contains one person per line. The format of each line is the following:
+* groundTruth.txt: full body detections with and with an index to indentify them across time and a seapking label. It contains one person per line. The format of each line is the following:
 ```
 frameNumber personIndex speakingLabel x0 y0 x1 y1....x35 y35 
 ```
 speakingLabel=1 if the person is speaking, 0 otherwise. 
 
-* prediction.txt: this is what you have to generate. We give an example of this file in data/video1/. It has to respect the same format than groundTruth.txt to be used by evaluatePred.py 
+* prediction.txt: this is what you have to generate. We give an example of this file in data/video1/. It has to respect the same format than groundTruth.txt to be used by visualizePred.py and evaluatePred.py 
 
 ## Data
 The link to the data can be found on the [data challange page](https://team.inria.fr/perception/research/data-challenge/).

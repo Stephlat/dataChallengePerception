@@ -5,7 +5,7 @@ This repository contains the basic scripts that are provided for the challenge:
 ## Dependencies
 You need to install opencv-python and  numpy. Some other recommended librairies are listed on the [data challange page](https://team.inria.fr/perception/research/data-challenge/).   
 
-##Scripts
+## Scripts
 We provide the folowing script:
 * visualizeObs.py: visualize the observations we provide for one given video
 ```
@@ -20,7 +20,7 @@ python visualizePred.py ..data/videoDirectory/prediction.txt
 python evaluatePred.py ..data/videoDirectory/prediction.txt
 ```
 
-##Format of the data
+## Format of the data
 ./data contains one folder per video sequence. Each folder contains:
 
 * video.avi: the video it-self.
@@ -39,5 +39,5 @@ speakingLabel=1 if the person is speaking, 0 otherwise.
 
 * prediction.txt: this is what you have to generate. We give an example of this file in data/video1/. It has to respect the same format than groundTruth.txt to be used by evaluatePred.py 
 
-##Data
+## Data
 The link to the data can be found on the [data challange page](https://team.inria.fr/perception/research/data-challenge/).

@@ -15,7 +15,7 @@ python visualizeObs.py ..data/videoDirectory/
 ```
 python visualizePred.py ..data/videoDirectory/prediction.txt
 ```
-* evaluatePred.py: evaluate the prediction for one given video
+* evaluatePred.py: evaluate the prediction for one given video (NOT AVAILABLE)
 ```
 python evaluatePred.py ..data/videoDirectory/prediction.txt
 ```
@@ -28,7 +28,7 @@ We strongly recommend to use these scipts to code the loading function of your o
 
 * video.avi: the video it-self.
 * ssl.avi: the video of the ssl heat map (downsample by a factor 2)
-* detection.txt: full body detections of the video. It contains one detection per line. The format of each line is the following:
+* detections.txt: full body detections of the video. It contains one detection per line. The format of each line is the following:
 ```
 frameNumber x0 y0 x1 y1....x35 y35 
 ```

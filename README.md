@@ -47,7 +47,7 @@ When a joint is not detected, the corresponding  xi and yi are set to -1
 
 * groundTruth.txt: full body detections with and with an index to indentify them across time and a seapking label. It contains one person per line. The format of each line is the following:
 ```
-frameNumber personIndex speakingLabel x0 y0 x1 y1....x35 y35 
+frameNumber personIndex speakingLabel x0 y0 x1 y1....x17 y17
 ```
 speakingLabel=1 if the person is speaking, 0 otherwise. 
 

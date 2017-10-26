@@ -26,11 +26,6 @@ python visualizeObs.py ..data/videoDirectory/
 ```
 python visualizePred.py ..data/videoDirectory/prediction.txt
 ```
-* evaluatePred.py: evaluate the prediction for one given video (NOT AVAILABLE)
-```
-python evaluatePred.py ..data/videoDirectory/prediction.txt
-```
-
 We strongly recommend to use these scipts to code the loading function of your own programm.
 
 
@@ -52,6 +47,9 @@ frameNumber personIndex speakingLabel x0 y0 x1 y1....x17 y17
 speakingLabel=1 if the person is speaking, 0 otherwise. 
 
 * prediction.txt: this is what you have to generate. We give an example of this file in data/video1/. It has to respect the same format than groundTruth.txt to be used by visualizePred.py and evaluatePred.py 
+
+## Evaluation
+To evaluate your tracking results, the MOTA metric is used. See equation (1) of https://arxiv.org/abs/1603.00831.
 
 ## List of recommended papers or websites
  * Audio-Visual Speaker Diarization Based on Spatiotemporal Bayesian Fusion: https://hal.inria.fr/hal-01413403

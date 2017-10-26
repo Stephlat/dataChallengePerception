@@ -1,9 +1,20 @@
 # Data Challenge organized by Inria-Perception
 
-This repository contains the basic scripts that are provided for the challenge:
+This repository contains the basic scripts that are provided for the challenge.The goal is to develop an audio-visual diarization model. 
+We provide the following observations that must be used as input for your model:
+* RGB videos
+* Sound Source Localisation (SSL) as heatmaps.
+* full body pose estimation
+
+The goal is twofold:
+* Perform visual tracking to associate the provided detections through time
+* Predict the speaking activity of each tracked person.
+
+We provide the some basic visualization and evaluation scripts.
+The data are based on the [AVDIAR dataset](https://team.inria.fr/perception/avdiar/).The data can be downloaded [here](http://perception.inrialpes.fr/Free_Access_Data/dataChallenge/dataChallenge.tar.gz).
 
 ## Dependencies
-You need to install opencv-python and  numpy. Some other recommended librairies are listed on the [data challange page](https://team.inria.fr/perception/research/data-challenge/). The scripts have been tested with opencv cv2 version 2.4.13 and python 2.7.12.
+You need to install opencv-python and  numpy. Some other recommended librairies are listed on the. The scripts have been tested with opencv cv2 version 2.4.13 and python 2.7.12.
 
 ## Scripts
 We provide the following scripts:
@@ -42,5 +53,11 @@ speakingLabel=1 if the person is speaking, 0 otherwise.
 
 * prediction.txt: this is what you have to generate. We give an example of this file in data/video1/. It has to respect the same format than groundTruth.txt to be used by visualizePred.py and evaluatePred.py 
 
-## Data
-The link to the data can be found on the [data challange page](https://team.inria.fr/perception/research/data-challenge/).
+## List of recommended papers or websites
+ * Audio-Visual Speaker Diarization Based on Spatiotemporal Bayesian Fusion: https://hal.inria.fr/hal-01413403
+ * Tracking a Varying Number of People with a Visually-Controlled Robotic Head: https://hal.inria.fr/hal-01542987v2
+ * Mot challenge: https://motchallenge.net/
+ * opencv : https://docs.opencv.org/2.4.13.2/index.html
+ * scikit-learn: http://scikit-learn.org/stable/
+</ul>
+<strong>The data:</strong>

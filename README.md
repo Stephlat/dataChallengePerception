@@ -11,7 +11,7 @@ The goal is twofold:
 * Predict the speaking activity of each tracked person.
 
 We provide the some basic visualization and evaluation scripts.
-The data are based on the [AVDIAR dataset](https://team.inria.fr/perception/avdiar/).The data can be downloaded [here](http://perception.inrialpes.fr/Free_Access_Data/dataChallenge/dataChallenge.tar.gz).
+The data are based on the [AVDIAR dataset](https://team.inria.fr/perception/avdiar/). The data can be downloaded [here](http://perception.inrialpes.fr/Free_Access_Data/dataChallenge/dataChallenge.tar.gz).
 
 ## Dependencies
 You need to install opencv-python and  numpy. Some other recommended librairies are listed on the. The scripts have been tested with opencv cv2 version 2.4.13 and python 2.7.12.
@@ -59,5 +59,3 @@ speakingLabel=1 if the person is speaking, 0 otherwise.
  * Mot challenge: https://motchallenge.net/
  * opencv : https://docs.opencv.org/2.4.13.2/index.html
  * scikit-learn: http://scikit-learn.org/stable/
-</ul>
-<strong>The data:</strong>

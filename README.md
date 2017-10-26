@@ -1,6 +1,6 @@
 # Data Challenge organized by Inria-Perception
 
-This repository contains the basic scripts that are provided for the challenge.The goal is to develop an audio-visual diarization model. 
+This repository contains the basic scripts that are provided for the challenge. The goal is to develop an audio-visual diarization model. 
 We provide the following observations that must be used as input for your model:
 * RGB videos
 * Sound Source Localisation (SSL) as heatmaps.
@@ -14,7 +14,7 @@ We provide the some basic visualization and evaluation scripts.
 The data are based on the [AVDIAR dataset](https://team.inria.fr/perception/avdiar/). The data can be downloaded [here](http://perception.inrialpes.fr/Free_Access_Data/dataChallenge/dataChallenge.tar.gz).
 
 ## Dependencies
-You need to install opencv-python and  numpy. Some other recommended librairies are listed on the. The scripts have been tested with opencv cv2 version 2.4.13 and python 2.7.12.
+You need to install opencv-python and  numpy. The scripts have been tested with opencv (cv2) version 2.4.13 and python 2.7.12.
 
 ## Scripts
 We provide the following scripts:

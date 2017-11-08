@@ -49,7 +49,7 @@ speakingLabel=1 if the person is speaking, 0 otherwise.
 * prediction.txt: this is what you have to generate. We give an example of this file in data/video1/. It has to respect the same format than groundTruth.txt to be used by visualizePred.py and evaluatePred.py 
 
 ## Evaluation
-To evaluate your tracking results, the MOTA metric is used. See equation (1) of https://arxiv.org/abs/1603.00831 and page 15 of https://link.springer.com/chapter/10.1007/978-3-540-69568-4_1 
+To evaluate your tracking results, the MOTA metric is used. See equation (1) of https://arxiv.org/abs/1603.00831 and http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.69.7070&rep=rep1&type=pdf (2.1.3)
 
 ## List of recommended papers or websites
  * Audio-Visual Speaker Diarization Based on Spatiotemporal Bayesian Fusion: https://hal.inria.fr/hal-01413403

@@ -16,6 +16,8 @@ The data are based on the [AVDIAR dataset](https://team.inria.fr/perception/avdi
 ## Dependencies
 You need to install opencv-python and  numpy. The scripts have been tested with opencv (cv2) version 2.4.13 and python 2.7.12.
 
+Refer to https://gist.github.com/arthurbeggs/06df46af94af7f261513934e56103b30 for installation instruction.
+
 ## Scripts
 We provide the following scripts:
 * visualizeObs.py: visualize the observations (visual and audio) we provide for one given video
@@ -34,7 +36,7 @@ We strongly recommend to use these scipts to code the loading function of your o
 
 * video.avi: the video it-self.
 * ssl.avi: the video of the Sound Source Localization (SSL) heat map (downsample by a factor 2). It gives the probability according to our SSL that their is a sound source at each pixel.
-* detections.txt: full body detections of the video. We ran a [multiple person detector](https://github.com/ZheC/Realtime_Multi-Person_Pose_Estimation) in order to obtained the coordinates (x, y) of 18 joints (nose, shoulders, elbows...) of the persons of each frame. The file contains one detection per line. The format of each line is the following:
+* detections.txt: full body detections of the video. We ran a [multiple person detector](https://github.com/ZheC/Realtime_Multi-Person_Pose_Estimation) in order to obtained the coordinates (x, y) of 18 joints (nose, neck, Rsho, Relb, Rwri, Lsho, Lelb, Lwri, Rhip, Rkne, Rank, Lhip, Lkne, Lank, Leye, Reye, Lear, Rear) of the persons of each frame. The file contains one detection per line. The format of each line is the following:
 ```
 frameNumber x0 y0 x1 y1....x17 y17 
 ```
@@ -49,7 +51,7 @@ speakingLabel=1 if the person is speaking, 0 otherwise.
 * prediction.txt: this is what you have to generate. We give an example of this file in data/video1/. It has to respect the same format than groundTruth.txt to be used by visualizePred.py and evaluatePred.py 
 
 ## Evaluation
-To evaluate your tracking results, the MOTA metric is used. See equation (1) of https://arxiv.org/abs/1603.00831.
+To evaluate your tracking results, the MOTA metric is used. See equation (1) of https://arxiv.org/abs/1603.00831 and http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.69.7070&rep=rep1&type=pdf (2.1.3)
 
 ## List of recommended papers or websites
  * Audio-Visual Speaker Diarization Based on Spatiotemporal Bayesian Fusion: https://hal.inria.fr/hal-01413403

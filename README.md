@@ -15,6 +15,7 @@ The data are based on the [AVDIAR dataset](https://team.inria.fr/perception/avdi
 
 ## Dependencies
 You need to install opencv-python and  numpy. The scripts have been tested with opencv (cv2) version 2.4.13 and python 2.7.12.
+
 Refer to https://gist.github.com/arthurbeggs/06df46af94af7f261513934e56103b30 for installation instruction.
 
 ## Scripts

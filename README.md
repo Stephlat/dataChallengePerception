@@ -15,6 +15,7 @@ The data are based on the [AVDIAR dataset](https://team.inria.fr/perception/avdi
 
 ## Dependencies
 You need to install opencv-python and  numpy. The scripts have been tested with opencv (cv2) version 2.4.13 and python 2.7.12.
+Refer to https://gist.github.com/arthurbeggs/06df46af94af7f261513934e56103b30 for installation instruction.
 
 ## Scripts
 We provide the following scripts:
@@ -34,7 +35,7 @@ We strongly recommend to use these scipts to code the loading function of your o
 
 * video.avi: the video it-self.
 * ssl.avi: the video of the Sound Source Localization (SSL) heat map (downsample by a factor 2). It gives the probability according to our SSL that their is a sound source at each pixel.
-* detections.txt: full body detections of the video. We ran a [multiple person detector](https://github.com/ZheC/Realtime_Multi-Person_Pose_Estimation) in order to obtained the coordinates (x, y) of 18 joints (nose, shoulders, elbows...) of the persons of each frame. The file contains one detection per line. The format of each line is the following:
+* detections.txt: full body detections of the video. We ran a [multiple person detector](https://github.com/ZheC/Realtime_Multi-Person_Pose_Estimation) in order to obtained the coordinates (x, y) of 18 joints (nose, neck, Rsho, Relb, Rwri, Lsho, Lelb, Lwri, Rhip, Rkne, Rank, Lhip, Lkne, Lank, Leye, Reye, Lear, Rear) of the persons of each frame. The file contains one detection per line. The format of each line is the following:
 ```
 frameNumber x0 y0 x1 y1....x17 y17 
 ```

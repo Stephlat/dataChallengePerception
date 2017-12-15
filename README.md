@@ -59,3 +59,4 @@ To evaluate your tracking results, the MOTA metric is used. See equation (1) of 
  * Mot challenge: https://motchallenge.net/
  * opencv : https://docs.opencv.org/2.4.13.2/index.html
  * scikit-learn: http://scikit-learn.org/stable/
+ * slides of the introductory presentation by Radu Horaud: http://perception.inrialpes.fr/Free_Access_Data/dataChallenge/DataScienceInstitute-10Oct2017.pdf

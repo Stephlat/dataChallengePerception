@@ -13,6 +13,11 @@ The goal is twofold:
 We provide the some basic visualization and evaluation scripts.
 The data are based on the [AVDIAR dataset](https://team.inria.fr/perception/avdiar/). The data can be downloaded [here](http://perception.inrialpes.fr/Free_Access_Data/dataChallenge/dataChallenge.tar.gz).
 
+
+## Test Data
+The test data can be downloaded [here](http://perception.inrialpes.fr/Free_Access_Data/dataChallenge/dataChallengeTest.tar.gz).
+
+
 ## Dependencies
 You need to install opencv-python and  numpy. The scripts have been tested with opencv (cv2) version 2.4.13 and python 2.7.12.
 

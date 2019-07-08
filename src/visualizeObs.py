@@ -19,8 +19,9 @@ path=sys.argv[1]
 idx=1
 cap = cv2.VideoCapture(path+"/video.avi")
 capssl = cv2.VideoCapture(path+"/ssl.avi")
-numberFrame=int(cap.get(cv2.cv.CV_CAP_PROP_FRAME_COUNT))
-frameShape=(int(cap.get(cv2.cv.CV_CAP_PROP_FRAME_HEIGHT)),int(cap.get(cv2.cv.CV_CAP_PROP_FRAME_WIDTH)))
+numberFrame=int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+print("number of frames {}".format(numberFrame))
+frameShape=(int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)),int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))) # removed .cv to fit newer version of opencv
 
 #We create a dictionary for each frame containing the pose and the ssl
 framesDic=[{'det':[]} for n in range(numberFrame)]

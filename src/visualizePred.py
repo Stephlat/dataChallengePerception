@@ -15,12 +15,13 @@ colors = [[255, 0, 0], [255, 85, 0], [255, 170, 0], [255, 255, 0], [170, 255, 0]
 
 
 predictionFileName=sys.argv[1]
-path='/'.join(predictionFileName.split("/")[:-1])
+path='/'.join(predictionFileName.replace("\\", "/").split("/")[:-1])
 idx=1
 cap = cv2.VideoCapture(path+"/video.avi")
 capssl = cv2.VideoCapture(path+"/ssl.avi")
-numberFrame=int(cap.get(cv2.cv.CV_CAP_PROP_FRAME_COUNT))
-frameShape=(int(cap.get(cv2.cv.CV_CAP_PROP_FRAME_HEIGHT)),int(cap.get(cv2.cv.CV_CAP_PROP_FRAME_WIDTH)))
+numberFrame=int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+print("number of frames {}".format(numberFrame))
+frameShape=(int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)),int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)))
 framesDic=[{'det':[],'idx':[],'speaking':[]} for n in range(numberFrame)]
 
 
